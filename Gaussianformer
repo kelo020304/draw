@@ -87,6 +87,11 @@
         <mxCell id="Gsy1rrtAQQ7ahGKau9W_-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shape=link;" edge="1" parent="1" source="Gsy1rrtAQQ7ahGKau9W_-33" target="Gsy1rrtAQQ7ahGKau9W_-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="Gsy1rrtAQQ7ahGKau9W_-33" target="Gsy1rrtAQQ7ahGKau9W_-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Gsy1rrtAQQ7ahGKau9W_-33" value="deformable feature aggregation" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="250" y="660" width="120" height="60" as="geometry" />
         </mxCell>
@@ -105,11 +110,60 @@
         <mxCell id="Gsy1rrtAQQ7ahGKau9W_-40" value="key point gen" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="435" y="660" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-42" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="Gsy1rrtAQQ7ahGKau9W_-42" target="Gsy1rrtAQQ7ahGKau9W_-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-42" value="weights gen" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="720" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Gsy1rrtAQQ7ahGKau9W_-44" value="torch size [ 1, 144000, 9 ,3]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
-          <mxGeometry x="520" y="660" width="230" height="30" as="geometry" />
+          <mxGeometry x="525" y="660" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-45" value="对于每个anchor 生成9个关键点" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="390" y="630" width="185" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="Gsy1rrtAQQ7ahGKau9W_-47" target="Gsy1rrtAQQ7ahGKau9W_-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-47" value="points 2d" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="990" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-49" value="torch size [ 1, 1296000, 6 ,4， 4]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="830" y="660" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-50" value="1296000=144000 * 9 将每个anchor的关键点展平&lt;div&gt;6 是相机数量&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="795" y="630" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="Gsy1rrtAQQ7ahGKau9W_-51" target="Gsy1rrtAQQ7ahGKau9W_-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-51" value="features 每个关键点特征&lt;div&gt;[1, 144000, 9 , 128]&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="610" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-53" value="torch size [ 1, 1296000, 6, 2]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="780" y="730" width="165" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-54" value="anchor 投影到每个相机2维平面上的坐标" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="750" y="760" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-55" value="features 每个anchor，相当于沿9的维度想加" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="465" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.889;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="Gsy1rrtAQQ7ahGKau9W_-55" target="Gsy1rrtAQQ7ahGKau9W_-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-58" value="output [1,144000,256]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="390" y="730" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-59" value="feature 和 instance feature&lt;div&gt;concat&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="320" y="770" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gsy1rrtAQQ7ahGKau9W_-65" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="250" y="830" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
