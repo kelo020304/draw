@@ -180,8 +180,8 @@
         <mxCell id="v5nkCGbOVagCgSL7Nqu6-4" value="&amp;nbsp;[1,144000,128]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
           <mxGeometry x="240" y="900" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="v5nkCGbOVagCgSL7Nqu6-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
-          <mxGeometry x="250" y="1160" width="120" height="60" as="geometry" />
+        <mxCell id="v5nkCGbOVagCgSL7Nqu6-6" value="SparseGaussian3DEncoder" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1170" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="v5nkCGbOVagCgSL7Nqu6-8" value="output&lt;div&gt;size [1,144000,28]&lt;/div&gt;&lt;div&gt;0-2:xyz&lt;/div&gt;&lt;div&gt;3-5 scales,协方差&lt;/div&gt;&lt;div&gt;6-9 rot&lt;/div&gt;&lt;div&gt;10-18 semantics&lt;/div&gt;&lt;div&gt;如果有透明度opa 就是10-11&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
           <mxGeometry x="30" y="1070" width="400" height="30" as="geometry" />
